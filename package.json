@@ -4,7 +4,7 @@
   "description": "support lti via BB url",
   "main": "index.js",
   "scripts": {
-    "start": "node ./examples/index.js",
+    "start": "node ./examples/simple/index.js",
     "test": "standard"
   },
   "repository": {
@@ -22,8 +22,11 @@
     "body-parser": "^1.15.0",
     "ejs": "^2.4.2",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "jfs": "^0.2.6",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "standard": "^6.0.8"
