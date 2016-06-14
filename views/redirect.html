@@ -4,8 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Redirect</title>
 </head>
-<!-- body onload="document.forms[0].submit()" -->
-<body>
+<body onload="document.forms[0].submit()">
 <form action="https://dust-fire.hyperdev.space/tool" method="POST">
   <% for (var prop in launchData) { %>
     <input type="hidden" name="<%= prop %>" value="<%= launchData[prop] %>">
