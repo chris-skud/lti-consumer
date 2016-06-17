@@ -25,6 +25,7 @@
     "express-session": "^1.13.0",
     "jfs": "^0.2.6",
     "morgan": "^1.7.0",
+    "multer": "^1.1.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0"
   },
