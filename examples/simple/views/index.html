@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Mock LMS Page</title>
+</head>
+<body>
+<p>LMS Page</p>
+<form action="/launch" method="post">
+	<input name="launchData" type="hidden" value='<%-JSON.stringify(launchParams)%>'>
+	<input type="submit" />
+</form>
+</body>
+</html>
