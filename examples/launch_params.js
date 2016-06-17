@@ -11,7 +11,7 @@ module.exports = {
   resource_link_id: '88391-e1919-bb3456',
 
   /* (Recommended) A plain text[1] title for the resource. This is the clickable text that appears in the link. */
-  resource_link_title: 'My Weekly Wiki',
+  resource_link_title: 'The Amazing Tool',
 
   /* (Optional) A plain text description of the link’s destination, suitable for display alongside the link. Typically no more than a few lines long. */
   resource_link_description: '',
@@ -23,7 +23,7 @@ module.exports = {
   user_image: 'http://....',
 
   /* (Recommended) A comma-separated list of URN values for roles.  If this list is non-empty, it should contain at least one role from the LIS System Role, LIS Institution Role, or LIS Context Role vocabularies (see Appendix A).  The assumed namespace of these URNs is the LIS vocabulary of LIS Context Roles so TCs can use the handles when the intent is to refer to an LIS context role.  If the TC wants to include a role from another namespace, a fully-qualified URN should be used.  Usage of roles from non-LIS vocabularies is discouraged as it may limit interoperability. */
-  roles: 'Instructor, Student',
+  roles: 'Student',
 
   /* (Recommended) These fields contain information about the user account that is performing this launch.  The names of these data items are taken from LIS [LIS, 11].  The precise meaning of the content in these fields is defined by LIS. These parameters are recommended unless they are suppressed because of privacy settings. */
   lis_person_name_given: 'Jane',
@@ -32,7 +32,7 @@ module.exports = {
   lis_person_contact_email_primary: 'user@school.edu',
 
   /* (Optional) A comma separated list of the user_id values which the current user can access as a mentor.  The typical use case for this parameter is where the Mentor role represents a parent, guardian or auditor.  It may be used in different ways by each TP, but the general expectation is that the mentor will be provided with access to tracking and summary information, but not necessarily the user’s personal content or assignment submissions.  In order to accommodate user_id values which contain a comma, each user_id should be url-encoded. This also means that each user_id from the comma separated list should url-decoded before a TP uses it.  This parameter is optional and should only be used when one of the roles passed for the current user is for urn:lti:role:ims/lis/Mentor. */
-  role_scope_mentor: 'f5b2cc6c-8c5c-24e8-75cc-fac504df920f,dc19e42c-b0fe-68b8-167e-4b1a8f2b367e',
+  role_scope_mentor: '',
 
   /* (Recommended) This is an opaque identifier that uniquely identifies the context that contains the link being launched. */
   context_id: '8213060-006f-27b2066ac545',
