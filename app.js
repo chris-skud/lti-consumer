@@ -7,11 +7,6 @@ var upload = multer() // for parsing multipart/form-data
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-app.route('/config.xml')
-  .get(function (req, res) {
-    res.sendFile(__dirname + '/views/config.xml', {'headers': {'Content-Type': 'text/xml'}})
-  })
-
 app.route('/launch')
   .get(function (req, res) {
     // res.render('redirect', {'launchData': {'key': 'value'}})
