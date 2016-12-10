@@ -1,15 +1,16 @@
 var express = require('express')
 var app = express()
+let ltiLib = require('../../app.js')
+let storage = require('../../lib/storage/jfs.js')(null)
+let lti = new ltiLib(storage)
 
-var lti = require('../../app.js')
-app.use(lti)
+app.use(lti.app)
 
 app.engine('.html', require('ejs').__express)
 app.set('views', __dirname + '/views')
 app.set('view engine', 'html')
 
 var port = process.env.PORT || 8090
-var storage = require('../../lib/storage/jfs.js')(null)
 
 // perhaps something like this
 // ltiConsumer.on('grade', function () {
