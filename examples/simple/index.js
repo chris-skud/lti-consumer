@@ -1,10 +1,10 @@
 var express = require('express')
 var app = express()
-let ltiLib = require('../../app.js')
+let LTIConsumer = require('../../lti_consumer.js')
 let storage = require('../../lib/storage/jfs.js')(null)
-let lti = new ltiLib(storage)
+let ltiConsumer = new LTIConsumer(storage)
 
-app.use(lti.app)
+app.use(ltiConsumer.app)
 
 app.engine('.html', require('ejs').__express)
 app.set('views', __dirname + '/views')
