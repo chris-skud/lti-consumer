@@ -7,11 +7,17 @@ describe('loading express', function () {
     server = ltiConsumer.app
   })
 
-  it('responds to /tool_config', function testSlash(done) {
+  it('responds to GET /tool_config', function testGetToolCfg(done) {
   request(server)
     .get('/tool_config')
     .set('Content-Type', 'application/json')
     .expect(200, done)
+  })
+  it('responds to POST /tool_config', function testPostToolCfg(done) {
+    request(server)
+      .post('/tool_config', {"id": "4"})
+      .set('Content-Type', 'application/json')
+      .expect(201, done)
   })
   it('404 everything else', function testPath(done) {
     request(server)
