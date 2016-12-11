@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./examples/simple/index.js",
-    "test": "standard"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,8 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "standard": "^6.0.8"
+    "mocha": "^3.2.0",
+    "standard": "^6.0.8",
+    "supertest": "^2.0.1"
   }
 }
