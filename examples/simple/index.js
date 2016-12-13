@@ -1,8 +1,8 @@
-var express = require('express')
-var app = express()
-let LTIConsumer = require('../../lti_consumer.js')
-let storage = require('../../lib/storage/jfs.js')(null)
-let ltiConsumer = new LTIConsumer(storage)
+const express = require('express')
+const app = express()
+const LTIConsumer = require('../../lti_consumer.js')
+const storage = require('../../lib/storage/jfs.js')(null)
+const ltiConsumer = new LTIConsumer(storage)
 
 app.use(ltiConsumer.app)
 
