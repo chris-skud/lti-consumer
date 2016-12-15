@@ -16,3 +16,5 @@ Support user provided:
 * storage
 * logger
 * authentication (passport compatible or just a func?)
+
+Potential LTI2 model here: https://source.sakaiproject.org/svn/basiclti/trunk/basiclti-util/src/java/org/imsglobal/lti2/LTI2Servlet.java
